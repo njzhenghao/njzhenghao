@@ -6,10 +6,19 @@
     <description>Recent content on 滚蛋吧-bug!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Sep 2018 12:57:39 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Nov 2018 10:29:20 +0800</lastBuildDate>
     
 	<atom:link href="https://hatebug.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>解决idea下devtools热部署不生效的问题</title>
+      <link>https://hatebug.com/post/how-to-solve-devtoos-doesnt-work/</link>
+      <pubDate>Fri, 30 Nov 2018 10:29:20 +0800</pubDate>
+      
+      <guid>https://hatebug.com/post/how-to-solve-devtoos-doesnt-work/</guid>
+      <description>看了很多网上关于idea热部署的教程，都是抄过去抄过来的，自己琢磨了一下，解决了热部署不生效的问题 1.添加maven依赖 (添加devtool</description>
+    </item>
     
     <item>
       <title>Helloworld</title>

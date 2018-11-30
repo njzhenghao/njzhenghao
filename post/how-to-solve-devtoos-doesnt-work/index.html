@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>归档 - 滚蛋吧-bug!</title>
+  <title>解决idea下devtools热部署不生效的问题 - 滚蛋吧-bug!</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,9 +16,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="njzhenghao" />
-  <meta name="description" content="程序猿笔记" />
-  <meta name="keywords" content="程序猿笔记, java, 胖瓜博客" />
+<meta name="author" content="njzhenghao" /><meta name="description" content="how-to-solve-devtoos-doesnt-work" />
+<meta name="keywords" content="idea, springboot, java, devtools" />
+
 
 
 
@@ -28,9 +28,7 @@
 <meta name="generator" content="Hugo 0.49" />
 
 
-<link rel="canonical" href="https://hatebug.com/post/" />
-<link href="https://hatebug.com/post/index.xml" rel="alternate" type="application/rss+xml" title="滚蛋吧-bug!" />
-  <link href="https://hatebug.com/post/index.xml" rel="feed" type="application/rss+xml" title="滚蛋吧-bug!" />
+<link rel="canonical" href="https://hatebug.com/post/how-to-solve-devtoos-doesnt-work/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -50,18 +48,26 @@
 
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="程序猿笔记" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://hatebug.com/post/" />
-<meta property="og:updated_time" content="2018-11-30T10:29:20&#43;08:00"/>
+<meta property="og:title" content="解决idea下devtools热部署不生效的问题" />
+<meta property="og:description" content="how-to-solve-devtoos-doesnt-work" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hatebug.com/post/how-to-solve-devtoos-doesnt-work/" /><meta property="article:published_time" content="2018-11-30T10:29:20&#43;08:00"/>
+<meta property="article:modified_time" content="2018-11-30T10:29:20&#43;08:00"/>
 
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="程序猿笔记">
+<meta itemprop="name" content="解决idea下devtools热部署不生效的问题">
+<meta itemprop="description" content="how-to-solve-devtoos-doesnt-work">
 
+
+<meta itemprop="datePublished" content="2018-11-30T10:29:20&#43;08:00" />
+<meta itemprop="dateModified" content="2018-11-30T10:29:20&#43;08:00" />
+<meta itemprop="wordCount" content="135">
+
+
+
+<meta itemprop="keywords" content="idea,springboot," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="程序猿笔记"/>
+<meta name="twitter:title" content="解决idea下devtools热部署不生效的问题"/>
+<meta name="twitter:description" content="how-to-solve-devtoos-doesnt-work"/>
 
 
 
@@ -128,46 +134,91 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
-          
-<section id="archive" class="archive">
-    <div class="archive-title">
-      <span class="archive-post-counter">
-        共计 2 篇文章
-      </span>
-    </div>
+          <article class="post">
     
-      <div class="collection-title">
-        <h2 class="archive-year">2018</h2>
+    <header class="post-header">
+      <h1 class="post-title">解决idea下devtools热部署不生效的问题</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-11-30 </span>
+        <div class="post-category">
+            
+              <a href="/categories/java/"> java </a>
+            
+          </div>
+        
+        
       </div>
+    </header>
 
-    <div class="archive-post">
-      <span class="archive-post-time">
-        11-30
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/how-to-solve-devtoos-doesnt-work/" class="archive-post-link">
-          解决idea下devtools热部署不生效的问题
-        </a>
-      </span>
-    </div>
+    
     
 
-    <div class="archive-post">
-      <span class="archive-post-time">
-        09-26
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/helloworld/" class="archive-post-link">
-          Helloworld
-        </a>
-      </span>
-    </div></section>
+    
+    
 
-<nav class="pagination">
-  
-  
-</nav>
+    
+    <div class="post-content">
+      <blockquote>
+<p>看了很多网上关于idea热部署的教程，都是抄过去抄过来的，自己琢磨了一下，解决了热部署不生效的问题</p>
+</blockquote>
 
+<p>1.添加maven依赖 (添加devtools引用)</p>
+
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-devtools&lt;/artifactId&gt;
+    &lt;optional&gt;true&lt;/optional&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>2.在设置中选中自动编译</p>
+
+<div class='align-center'>
+  <p><img src="/img/how-to-solve-devtoos-doesnt-work-1.jpg" alt="" /></p>
+
+</div>
+
+<p>3.编辑SpringBoot主项目文件</p>
+
+<p><em>On &lsquo;Update&rsquo; action 选择 &lsquo;Hot swap ……&rsquo;</em></p>
+
+<p><em>On frame deactivation 选择 &lsquo;Update classes and resources&rsquo;</em></p>
+
+<div class='align-center'>
+  <p><img src="/img/how-to-solve-devtoos-doesnt-work-2.jpg" alt="" /></p>
+
+</div>
+
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/idea/">idea</a>
+          
+          <a href="/tags/springboot/">springboot</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/helloworld/">
+            <span class="next-text nav-default">Helloworld</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
         
 

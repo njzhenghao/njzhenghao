@@ -10,5 +10,23 @@
 	<atom:link href="https://hatebug.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>diary</title>
+      <link>https://hatebug.com/categories/diary/</link>
+      <pubDate>Wed, 26 Sep 2018 12:57:39 +0800</pubDate>
+      
+      <guid>https://hatebug.com/categories/diary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://hatebug.com/categories/java/</link>
+      <pubDate>Fri, 30 Nov 2018 10:29:20 +0800</pubDate>
+      
+      <guid>https://hatebug.com/categories/java/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
