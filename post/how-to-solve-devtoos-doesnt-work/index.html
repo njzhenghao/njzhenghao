@@ -96,27 +96,7 @@
   </ul>
 </nav>
   <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div class="logo-wrapper">
-  <a href="/" class="logo">滚蛋吧-bug!</a>
-</div>
-
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">Tags</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">Categories</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">About</a>
-      </li>
-  </ul>
-</nav>
-    </header>
+    
 
     <main id="main" class="main">
       <div class="content-wrapper">
@@ -135,7 +115,12 @@
       </div>
     </header>
 
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
     
+  </div>
+</div>
     <div class="post-content">
       <blockquote>
 <p>看了很多网上关于idea热部署的教程，都是抄过去抄过来的，自己琢磨了一下，解决了热部署不生效的问题</p>
@@ -178,7 +163,21 @@
 
     </div>
 
-    <footer class="post-footer">
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">njzhenghao</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2018-11-30</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content">true</span>
+  </p>
+</div><footer class="post-footer">
       <div class="post-tags">
           <a href="/tags/idea/">idea</a>
           <a href="/tags/springboot/">springboot</a>
@@ -194,44 +193,25 @@
     </footer>
   </article>
         </div>
-        
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hatebug';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
       </div>
     </main>
 
-    <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:admin@hatebug.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://stackoverflow.com/users/6407549/njzhenghao" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
-      <a href="https://twitter.com/njzhenghao" class="iconfont icon-twitter" title="twitter"></a>
-      <a href="https://www.facebook.com/njzhenghao" class="iconfont icon-facebook" title="facebook"></a>
-      <a href="https://github.com/njzhenghao" class="iconfont icon-github" title="github"></a>
-  <a href="https://hatebug.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    主题 - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-
-  <span class="copyright-year">
-    &copy; 
-    2015 - 
-    2018
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">olOwOlo</span>
-  </span>
-</div>
-    </footer>
+    
 
     <div class="back-to-top" id="back-to-top">
       <i class="iconfont icon-up"></i>
