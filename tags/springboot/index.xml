@@ -13,10 +13,10 @@
     
     <item>
       <title>解决idea下devtools热部署不生效的问题</title>
-      <link>https://hatebug.com/post/how-to-solve-devtoos-doesnt-work/</link>
+      <link>https://hatebug.com/post/how-to-solve-devtools-doesnt-work/</link>
       <pubDate>Fri, 30 Nov 2018 10:29:20 +0800</pubDate>
       
-      <guid>https://hatebug.com/post/how-to-solve-devtoos-doesnt-work/</guid>
+      <guid>https://hatebug.com/post/how-to-solve-devtools-doesnt-work/</guid>
       <description>看了很多网上关于idea热部署的教程，都是抄过去抄过来的，自己琢磨了一下，解决了热部署不生效的问题 1.添加maven依赖 (添加devtool</description>
     </item>
     
